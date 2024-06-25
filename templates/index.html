@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Signature</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl font-bold">Digital Signature for Document Security</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="p-4 text-center">
+                    <i class="fas fa-key text-blue-500 text-6xl"></i>
+                    <h2 class="text-xl font-bold mt-4">Generate RSA Keys</h2>
+                    <a href="/generate_keys" class="block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Generate Keys
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="p-4 text-center">
+                    <i class="fas fa-signature text-green-500 text-6xl"></i>
+                    <h2 class="text-xl font-bold mt-4">Create Digital Signature</h2>
+                    <a href="/create_signature" class="block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                        Create Signature
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="p-4 text-center">
+                    <i class="fas fa-check-circle text-red-500 text-6xl"></i>
+                    <h2 class="text-xl font-bold mt-4">Verify Digital Signature</h2>
+                    <a href="/verify_signature" class="block mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                        Verify Signature
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Tugas Makalah Digital Signature. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
